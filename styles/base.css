@@ -113,7 +113,11 @@ main {
   text-align: center;
 }
 .flag img {
-  margin-right: 1rem;
+  float: left;
+}
+.flag figcaption {
+  margin-top: 1rem;
+  margin-right: 20rem;
   float: left;
 }
 footer {
