@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Daniel Paulino</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals: Portfolio of Daniel Paulino with bio, projects, and social media links.">
+    <meta name="autor" content="Daniel Paulino">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
 <body>
-    <h1> WDD 131 - Daniel Paulino</h1>
+    <div class="layout-container">
+        <header>
+            <h1><span id="course-title">WDD131: Web Fundamentals | Daniel Paulino</span></h1>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="www.linkedin.com/in/daniel-paulinop" title=" linkedin-profile" target="_blank"> LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" title="canvas" target="_blank" >Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" title="scripture" target="_blank">Scripture</a></li>
+                    <li><a href="#" title="final-project" target="_blank">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main> 
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>My name is Daniel Paulino. I was born in the<strong> Dominican Republic</strong> and currently live in Texas. I am passionate about technology, web3, and software development. I enjoy learning new skills and exploring innovative projects that help people and communities grow.</p>
+                        <h3> Dominican Republic</h3>
+                        <br> 
+                        <div class="flag">
+                            <img src="images/dr_flag.jpg" alt="Daniel Paulino" width="150">
+                            <p>The Dominican Republic is located in the Caribbean and is known for its beautiful beaches, rich culture, and welcoming people. It’s a vibrant country famous for merengue, bachata, and delicious food.</p>
+                        </div>
+                    </div>
+                    <div class="about-photo">
+                        <img src="images/profile.jpg" alt="Daniel Paulino" width="200">
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">Solana dev</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer> 
+            <p>© <span id="currentyear"></span> | Daniel N Paulino | Dominican Republic</p>
+            <br>
+            <p> Last Modification:<span id="lastModified"></span></p>
+        </footer>
+    </div> 
 </body>
 </html>
