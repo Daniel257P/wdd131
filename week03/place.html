@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131|Explore Dubai Atlantis Resort | W03 Country Page</title>
+    <meta name="description" content="Discover Dubai Atlantis Resort with key facts, stunning images, and live weather info. A responsive design for all devices.">
+    <meta name="autor" content="Daniel Paulino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dubai Atlantis Resort</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/small_atlatis.webp" alt="Dubai Atlantis Resort" media="(max-width: 1024px) " >
+                <img src="images/large_atlatis.webp" alt="Dubai Atlantis Resort">
+            </picture>
+        </div>
+        <section class="content">
+            <div class="data-panel">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Location:</strong> Palm Jumeirah, Dubai</li>
+                    <li><strong>Area:</strong> 46 hectares</li>
+                    <li><strong>Rooms:</strong> 1,500+</li>
+                    <li><strong>Languages:</strong> Arabic, English</li>
+                    <li><strong>Currency:</strong> UAE Dirham (AED)</li>
+                    <li><strong>Time Zone:</strong> UTC+4</li>
+                    <li><strong>Calling Code:</strong> +971</li>
+                    <li><strong>Internet TLD:</strong> .ae</li>
+                </ul>
+            </div>
+            <div class="weather-panel">
+                <h2 class="weather-title">Weather
+                    <img src="images/weather_icon.svg" alt="weather icon" width="200px" >
+                </h2>
+                <p><strong>Temperature:</strong> <span id="temp">28°C</span></p>
+                <p><strong>Conditions:</strong> Sunny</p>
+                <p><strong>Wind:</strong> <span id="wind">10 km/h</span></p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> | Daniel N Paulino |</p>
+        <br>
+        <p> Last Modification:<span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
