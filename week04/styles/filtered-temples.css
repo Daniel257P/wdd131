@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  /* padding: 1rem; */
+}
+header {
+  background-color: #004466;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    cursor: pointer;
+}
+#menu::before {
+    content: "☰";
+}
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+.navigation li {
+    display: none;
+}
+.navigation.open li {
+   width: 100%;
+   margin-right: 420px;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem 8px;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+    
+}
+.navigation a:hover, navigation a:active {
+    color:#fff;
+    background-color: #000;
+}
+.open li {
+    display: block;
+}
+#menu.open::before {
+    content: "X";
+}
+nav {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+} 
+header main {
+  margin-top: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+section  {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  left: auto;
+}
+body section {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
