@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header {
+  background-color: #feffff;
+  color: #000000;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+header h1:hover {
+    color: #0f65cc;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background: none;
+    border: none;
+    color: #0f65cc;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    cursor: pointer;
+}
+#menu::before {
+    content: "☰";
+}
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+.navigation li {
+    display: none;
+}
+.navigation.open li {
+   width: 100%;
+   margin-right: 420px;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem 8px;
+    text-align: left;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 100;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+    font-weight: bold;
+    
+}
+.navigation a:hover, navigation a:active {
+    color:#0f65cc;
+}
+.open li {
+    display: block;
+}
+#menu.open::before {
+    content: "X";
+}
+nav {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+} 
+
+header main {
+  margin-top: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+main p {
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.container.hide-icons {
+    width: 600px;
+    align-items: center;
+    position: relative;
+    left: 500px;
+}
+
+section h3 {
+    margin-bottom: 35px;
+}
+section  {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  left: auto;
+}
+body section {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: none;
+}
+
+#design-layout {
+    display: flex;           
+    gap: 20px;              
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-top: 20px;
+}
+
+.color-palette,
+.wireframe {
+    flex: 1;                
+    background: #fff;        
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.color-palette img,
+.wireframe img {
+    position: static;
+    width: 600px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.hide-icons img {
+  display: none;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.color-palette,
+.wireframe  {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* Hide hamburger menu */
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navigation ul {  
+  display: flex;
+  gap: 5rem; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  #menu {
+    display: none;
+  }
+
+  /* Grid layout for temple images */
+    .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+    section {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+    section img {
+    display: block;
+    position: absolute;
+    top: 17.5rem;
+    cursor: pointer;
+    width: 35px;
+    height: auto;
+    border-radius: 4px;
+  }
+    footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+}
