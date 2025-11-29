@@ -72,6 +72,10 @@ main {
   gap: 15px; 
   
 }
+
+.rating legend{
+    margin-top: 20px;
+}
 .rating label {
   display: flex;
   flex-direction: column; 
