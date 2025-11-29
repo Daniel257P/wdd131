@@ -66,11 +66,6 @@ main {
     max-width: 400px;
 }
 
-.wf1 input[type="submit"]{
-    transform: translateY(-2px);
-    cursor: pointer;;
-}
-
 /* overall rating */
 .rating {
   display: flex;
@@ -107,7 +102,7 @@ main {
 
 .wf1 input[type="date"],
 .wf1 select,
-.wf1 textarea[type="text"]
+.wf1 textarea
 {
     background-color: #eee;
     display: block;
@@ -120,7 +115,7 @@ main {
     box-sizing: border-box;
 }
 
-.wf1 textarea[type="text"] {
+.wf1 textarea {
     height: 100px;
 }
 
@@ -152,6 +147,7 @@ input, textarea, select{
     margin-top: 3rem;
     box-shadow: 1px 1px 4px #999;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .thanks-message h1{
