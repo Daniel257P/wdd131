@@ -169,3 +169,34 @@ footer {
   text-align: center;
   grid-column: 1 / 4;
 }
+
+
+@media (max-width: 768px) {
+  nav .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .wf1 fieldset,
+  .wf1 input[type="text"],
+  .wf1 select,
+  .wf1 textarea,
+  .wf1 input[type="submit"] {
+    max-width: 100%;
+    width: 100%;
+  }
+  .rating {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
