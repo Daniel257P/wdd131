@@ -30,14 +30,15 @@
         </div>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <label for="productName"> Product Name
+                <label for="productName"> Product Name 
                 <select id="productName" name="productName" required>
                     <option value="" disabled>Choose a Product</option>
                 </select>
-               
+                </label>
                 
                 <div class="rating">
-                    <label for="rating1"><span class="star">★</span><input type="radio" id="rating1" name="rating" value="1"></label>
+                    <label for="rating1"><span class="star">★</span><input type="radio" id="rating1" name="rating" value="1">
+                    </label>
                     <label for="rating2"><span class="star">★★</span> <input type="radio" id="rating2" name="rating" value="2"></label>
                     <label for="rating3"><span class="star">★★★</span><input type="radio" id="rating3" name="rating" value="3"></label>
                     <label for="rating4"><span class="star">★★★★</span><input type="radio" id="rating4" name="rating" value="4"></label>
@@ -48,23 +49,16 @@
                 
 
                 <label>Which features did you find useful in the product? (Check all that apply)</label>
-                <label>Durability
-                    <input type="checkbox" id="durability" name="durability" value="durability">
-                </label>
-                <label>Ease of Use
-                    <input type="checkbox"  id="ease" name="ease" value="ease">
-                </label>
-                <label>Performance
-                    <input type="checkbox"  id="performance" name="performance" value="performance">
-                </label>
-                <label>Design
-                    <input type="checkbox"  id="design" name="design" value="design">
-                </label>
+                <label for="durability"><input type="checkbox" id="durability" name="durability" value="durability">Durability</label>
+                <label for="ease"><input type="checkbox"  id="ease" name="ease" value="ease">Ease of Use</label>
+                <label for="performance"><input type="checkbox"  id="performance" name="performance" value="performance">Performance</label>
+                <label for="design"><input type="checkbox"  id="design" name="design" value="design">Design</label>
+
                 <label for="text">Written Review (Optional)
-                <textarea id="text" name="text" placeholder="Add your comments or feedback"></textarea>
+                    <textarea id="text" name="text" placeholder="Add your comments or feedback"></textarea>
                 </label>
-            
-                <label>Your Name (Optional)
+                
+                <label> Your Name (Optional)
                     <input type="text" id="fname" name="fname" placeholder="Full Name">
                 </label>
             </fieldset>
