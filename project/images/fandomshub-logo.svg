@@ -1,0 +1,28 @@
+<!-- Save as fandomshub-logo-full.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="180" viewBox="0 0 820 180" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">FandomsHub logo</title>
+  <desc>Stylized F inside a hub circle with nodes, followed by the wordmark "FandomsHub".</desc>
+
+  <!-- Background transparent; scale by viewBox -->
+  <!-- Color palette: primary #0f62fe (blue), accent #ff6b6b (coral), dark #111827 (charcoal) -->
+  <!-- Symbol -->
+  <g transform="translate(24,12)">
+    <!-- outer ring -->
+    <circle cx="70" cy="70" r="70" fill="#0f65cc" opacity="1"></circle>
+    <!-- hub nodes -->
+    <circle cx="120" cy="28" r="28" fill="#ff7f11"></circle>
+    <circle cx="18" cy="18" r="12" fill="#ff7f11"></circle>
+    <circle cx="130" cy="112" r="14" fill="#ff7f11"></circle>
+    <!-- stylized F (negative-space) -->
+    <!-- <path d="M36 36h34c6.6 0 12 5.4 12 1v8c0 6.6-5.4 12-12 12H52v8h30v12H52v24H36V36z" fill="#ffffff"></path> -->
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(200,70)">
+    <text x="0" y="20" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="48" font-weight="700" fill="#0d1b2a">Fandoms</text>
+    <text x="0" y="64" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="42" font-weight="600" fill="#0d1b2a" opacity="0.85">Hub</text>
+
+    <!-- small tagline -->
+    <text x="0" y="104" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="16" fill="#374151" opacity="0.9">Collect · Share · Celebrate</text>
+  </g>
+</svg>
