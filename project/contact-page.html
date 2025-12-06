@@ -6,7 +6,8 @@
     <meta name="description" content="Dive into VeVe and experience true digital ownership. Discover guides for new collectors, explore popular licensed brands, understand NFTs, and view unique personal collections. Join VeVe today and get $10 free to start your journey.>
     <meta name="author" content="Daniel Paulino">
     <title>VeVe Guide for New Collectors – NFT Tips, Top Brands & $10 Bonus</title>
-    <link rel="stylesheet" href="styles/fandomshub.css"> 
+    <link rel="stylesheet" href="styles/fandomshub.css">
+    <link rel="stylesheet" href="styles/contact-page.css">  
     <script src="scripts/fandomshub.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +24,28 @@
                     <li><a href="index.html" id="homebutton" title="Home" >Home</a></li>
                     <li><a href="overview-tips.html" id="overviewbutton" title="overview" >Overview</a></li>
                     <li><a href="brands-collection.html" id="brandsbutton" title="brands" >Brands</a></li>
-                    <li><a href="overview-tips.html" id="tipsbutton" title="tips" >Tips</a></li>
-                    <li><a href="brands-collection.html" id="collectionbutton" title="collection" >Collection</a></li>
+                    <li><a href="tips-page.html" id="tipsbutton" title="tips" >Tips</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <form method="get" action="thanks-page.html" class="wf1">
+                <fieldset>
+                    <Legend>Contact Information</Legend>
+                    <label> Your Name* <input type="text" name="fname" placeholder="Full Name" required></label>
+                    <label> Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label> website <input type="url" name="url" placeholder="http://"></label>
+                    <label for="text">Any comments or feedbacks? (Optional)
+                        <textarea id="text" name="text" placeholder="Add your comments or feedback"></textarea>
+                    </label>
+                    <label for="productName"> What collectible brands are you most interested in?</label>
+                    <select id="brandsName" name="brandsName" required>
+                        <option value="" selected disabled>Select a Brand</option>
+                    </select>
+                    <input type="submit" value="Contact the Team!">
+                </fieldset>
+            </form>
+
         </main>
         <aside>
         </aside>
@@ -48,7 +65,7 @@
                 <div class="footer-nav">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="overview-tips.html">Tips</a></li>
+                        <li><a href="tips-page.html">Tips</a></li>
                         <li><a href="overview-tips.html">Overview</a></li>
                         <li><a href="contact-page.html">contact Us</a></li>
                         <li><a href="references.html">Reference</a></li>
